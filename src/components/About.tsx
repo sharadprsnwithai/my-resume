@@ -56,23 +56,28 @@ export default function About() {
             className="relative"
           >
             <div className="aspect-square max-w-md mx-auto relative">
-              {/* Decorative elements */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-3xl blur-2xl" />
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-full blur-xl opacity-30" />
+              <div className="absolute inset-2 bg-gradient-to-br from-slate-900 to-slate-800 rounded-full" />
+              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 p-[3px]">
+                <div className="w-full h-full rounded-full bg-slate-900 p-1">
+                  <img
+                    src="/sharad.jpeg"
+                    alt="Sharad"
+                    className="w-full h-full rounded-full object-cover object-center border-4"
+                  />
+                </div>
+              </div>
               <motion.div
-                className="absolute inset-4 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-3xl border border-white/10"
+                className="absolute -inset-4 rounded-full border border-white/10"
                 animate={{
                   boxShadow: [
-                    "0 0 20px rgba(59, 130, 246, 0.2)",
-                    "0 0 40px rgba(139, 92, 246, 0.3)",
-                    "0 0 20px rgba(59, 130, 246, 0.2)",
+                    "0 0 30px rgba(59, 130, 246, 0.3)",
+                    "0 0 60px rgba(139, 92, 246, 0.4)",
+                    "0 0 30px rgba(59, 130, 246, 0.3)",
                   ],
                 }}
                 transition={{ duration: 3, repeat: Infinity }}
               />
-              {/* Placeholder for your image */}
-              <div className="absolute inset-6 bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl flex items-center justify-center border border-white/5">
-                <User size={80} className="text-slate-600" />
-              </div>
             </div>
           </motion.div>
 
